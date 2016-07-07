@@ -1,0 +1,19 @@
+package Day2;
+
+import java.util.Scanner;
+
+public class Zeller {
+	
+	public static void main(String args[])
+	{
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the date as MM-DD-YYYY");
+		String date;
+		while((date=s.nextLine()).equalsIgnoreCase("quit")!=true)
+		{
+			String split[]=date.split("-");
+			System.out.println(split.length);
+		}
+	}
+
+}
