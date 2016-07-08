@@ -1,0 +1,64 @@
+package Day3;
+
+public class Main {
+
+	static String arr[]={"zero","one","two","three","four","five","six","seven","eight","nine"};
+	public static void main(String[] args) {
+	
+		int a[] = new int[0];
+		double b[] = new double[0] ;
+		String c[] = null;
+		System.out.println(addUp(a));
+		System.out.println(addUp(b));
+		System.out.println(addUp(c));
+	/*	a=new int[{1,2}];
+		System.out.println(addUp());
+		System.out.println(addup({}));
+		System.out.println(addup({}));
+		System.out.println(addup({}));
+		System.out.println(addup({}));
+		System.out.println(addup({}));
+		*/	
+	}
+	
+	public static int addUp(int num[])
+	{
+		System.out.println(num.length);
+		System.out.println("Executing int method");
+		int sum=0;
+		for(int i=0;i<num.length;i++)
+			sum+=num[i];
+		return sum;
+	}
+	
+	public static double addUp(double num[])
+	{
+		
+	System.out.println("Executing double method");	
+	double sum=0.0;
+	for(int i=0;i<num.length;i++)
+		sum+=num[i];
+	return sum;
+	
+	}
+	
+	public static int addUp(String num[])
+	{
+		System.out.println("Executing string method");
+		int sum=0;
+		for(int i=0;i<num.length;i++)
+			sum+=toNumber(num[i]);
+		return sum;
+	}
+	
+	public static int toNumber(String num)
+	{
+		for(int i=0;i<arr.length;i++)
+		{
+			if(arr[i].equalsIgnoreCase(num))
+				return i;
+		}
+		return -1;
+	}
+
+}
