@@ -1,0 +1,15 @@
+package Day4;
+
+import java.util.concurrent.ThreadLocalRandom;;
+public class Main {
+	
+	public enum MachineSpin { BAR , MEDAL, COIN, TRIPLE_BAR, CHERRY};
+	
+	public static void main(String args[])
+	{
+		ThreadLocalRandom t = null;
+		int i= t.nextInt(3);
+		System.out.println(MachineSpin.values()[i]);
+	}
+
+}

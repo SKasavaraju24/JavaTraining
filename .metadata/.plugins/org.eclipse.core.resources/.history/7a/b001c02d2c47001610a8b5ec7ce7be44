@@ -1,0 +1,12 @@
+package Day4;
+
+public class Main {
+	
+	public enum MachineSpin { BAR , MEDAL, COIN, TRIPLE_BAR, CHERRY};
+	
+	public static void main(String args[])
+	{
+		System.out.println(MachineSpin.values()[2]);
+	}
+
+}

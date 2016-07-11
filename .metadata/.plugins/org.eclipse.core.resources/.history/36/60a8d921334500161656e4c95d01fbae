@@ -1,0 +1,23 @@
+package Day4;
+
+public class MortgageAccount extends Account {
+
+	long borrowedAmount=0;
+	public MortgageAccount(String holderName, long borrowedAmount) {
+		super(holderName);
+		this.borrowedAmount=borrowedAmount;
+	}
+
+	@Override
+	boolean deposit(long amount) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	boolean withdraw(long amount) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}
