@@ -1,9 +1,0 @@
-package Day2;
-
-public class Trial {
-
-	public static void main(String args[])
-	{
-		System.out.println(664%7);
-	}
-}

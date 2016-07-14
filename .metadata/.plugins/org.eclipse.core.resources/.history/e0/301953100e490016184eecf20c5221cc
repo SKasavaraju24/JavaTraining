@@ -1,0 +1,43 @@
+package Day5;
+
+public class Main {
+	
+	public enum Month{ JANUARY, FEBRUARY, MARCH, APRIL, MAY, JUNE, JULY, AUGUST, SEPTEMBER, OCTOBER, NOVEMBER, DECEMBER};
+	
+	static int[] days= new int[12];
+	
+	public static void main(String args[])
+	{
+		setDays();
+		
+		
+	}
+	
+    public static void setDays()
+    {
+    	for(int i=0;i<12;i++)
+		{
+			if(i==1)
+			 days[i]= 28;
+			else if(i==0||i==2||i==4||i==6||i==7||i==9||i==11)
+			 days[i]=31;
+			else
+			days[i]=30;
+		
+		}
+    }
+    
+	public static void convertAndCheck(String month, int day) throws BadMonth
+	{
+		
+		try{
+			Month.valueOf(month);
+		}
+		catch(Exception e)
+		{
+			throw new BadMonth(e);
+		}
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package Day6;
+
+public class SecurityCamera implements Photographer{
+
+	@Override
+	public void prepareScence() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public String takePhotograph() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
