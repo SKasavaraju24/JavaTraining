@@ -1,0 +1,34 @@
+package Day7;
+
+public class Sequence {
+
+	int default_size = 128;
+	Object[] array= new Object[default_size];
+	void add(Object o)
+	{
+		for(int i=0;i<array.length;i++)
+		{
+			if(array[i]!=null)
+				array[i]=o;
+		}
+	}
+	
+	Object get(int idx)
+	{
+		return array[idx];
+	}
+	
+	int size()
+	{
+		int count=0;
+		while(array[count++]!=null)
+		{
+			continue;
+		}
+		
+		return count;
+	}
+	
+	
+	
+}

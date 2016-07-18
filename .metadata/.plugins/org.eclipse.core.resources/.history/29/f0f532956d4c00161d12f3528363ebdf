@@ -1,0 +1,11 @@
+package Day7;
+
+public class Ex {
+	
+	public static void main(String args[])
+	{
+		String a ="abcde";
+		System.out.println(Integer.parseInt(a));
+	}
+
+}

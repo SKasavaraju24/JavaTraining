@@ -1,5 +1,0 @@
-package Day4;
-
-public abstract class Account {
-
-}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Day7.Ex&apos; to &apos;Main&apos;&#x0D;&#x0A;- Original project: &apos;BuilderEg&apos;&#x0D;&#x0A;- Original element: &apos;Day7.Ex&apos;&#x0D;&#x0A;- Renamed element: &apos;Day7.Main&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Ex&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Day7{Ex.java[Ex" matchStrategy="1" name="Main" qualified="false" references="true" similarDeclarations="false" stamp="1468799629880" textual="false" version="1.0"/>
+</session>

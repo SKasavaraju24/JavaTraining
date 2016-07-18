@@ -1,0 +1,25 @@
+package Day7;
+
+public class Main {
+	
+	public static void main(String args[]) 
+	{
+		try {
+			Target t1= Target.builder().name("Sandeep").state("TX").country("USA").zip("78759").build();
+			System.out.println(t1.toString());
+		} catch (Exception e) {
+			
+			System.out.println("Build Failed! "+ e.getMessage());
+		}
+		
+		try {
+			Target t2= Target.builder().name("Sandeep").state("TX").country("USA").zip("a75bc").build();
+			System.out.println(t2.toString());
+		} catch (Exception e) {
+			
+			System.out.println("Build Failed! "+ e.getMessage());
+		}
+		
+	}
+
+}

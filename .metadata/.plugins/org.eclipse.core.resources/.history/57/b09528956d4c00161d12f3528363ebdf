@@ -1,0 +1,24 @@
+package Day7;
+
+public class Target {
+
+	String name;
+	String mobile;
+	String state;
+	String country;
+	String zip;
+	
+	private void isValid() throws Exception
+	{
+		boolean exit=true;
+		
+		if(name==null&&mobile==null)
+		{
+			throw new Exception("Please include either name or mobile number!");
+		}
+		
+		
+	
+		
+	}
+}
